@@ -57,7 +57,19 @@
                 <mat-hint>Unit is kg</mat-hint>
               </mat-form-field>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <label id="example-radio-group-label">Pick your favorite season</label>
+<mat-radio-group
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  >
+  <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+    {{season}}
+  </mat-radio-button>
+</mat-radio-group>
+<div>Your favorite season </div>
+
+            </div>
             <div class="col-md-6"></div>
 
             
